@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruitment Form</title>
+</head>
+<body>
+    <header>
+        <h1>Recruitment Form</h1>
+        <p>Would you like to join our team of energetic, friendly and talented individuals? Would you like the chance to work in an friendly, upbeat environment? Would you like to meet people who enjoys the same food as yourself? <br> Now's your chance! <br> Just fill out the form below and we'll contact you as soon as possible.</p>
+    </header>
+
+    <nav>
+        <a href="main-page.html#home" aria-label="Go to the top of the page">Home</a>
+        <a href="main-page.html#menu" aria-label="Go to the menu">Menu</a>
+        <a href="main-page.html#drinks" aria-label="Go to the drinks menu">Drinks</a>
+        <a href="main-page.html#contact" aria-label="Go to contact information section">Contact</a>
+        <a href="recruitment-form.html" aria-label="Would you like to join our team?">Recruitment</a>
+        <a href="survey.html" aria-label="Fill out our survey to get the chance to win a two hundred euro voucher">Win 200 euro voucher</a>
+    </nav>
+    <form action="https://formdump.codeinstitute.net" method="POST">
+        <fieldset>
+            <legend>Primary details</legend>
+            <div>
+                <span>
+                    <label for="first-name">Your First Name:</label>
+                    <input id="first-name" type="text" name="first-name" placeholder="Enter your first name" required>
+                </span>
+                <br>
+                <span>
+                    <label for="last-name">Your Surname:</label>
+                    <input id="last-name" type="text" name="last-name" placeholder="Enter your surname" required>
+                </span>
+            </div>
+            <div>
+                <label for="telephone-number">Mobile Phone Number:</label>
+                <input id="telephone-number" name="applicant's-mobile-number" type="tel" placeholder="Enter your phone number here" required>
+                <br>
+                <label for="house-number">House Number <em>(optional)</em>:</label>
+                <input id="house-number" name="applicant's-house-number" type="tel" placeholder="Enter your house number here">
+            </div>
+            <div>
+                <label for="email">Your Email:</label>
+                <input id="email" type="email" name="email-address" placeholder="Enter your email address" required>
+            </div>
+            <div>
+                <label for="age-field">Your Age</label>
+                <input id="age-field" type="number" name="age-in-years" min="16" required>
+            </div>
+            <div>
+                <p>Your Address:</p>
+                <label for="address-line-1">Address Line 1:</label>
+                <input id="address-line-1" name="address-line-1" type="text" placeholder="Address Line 1" required>
+                <br>
+                <label for="address-line-2"></label>Address Line 2:</label>
+                <input id="address-line-2" name="address-line-2" type="text" placeholder="Address Line 2">
+                <br>
+                <label for="name-of-town">Town:</label>
+                <input for="name-of-town" name="name-of-town" type="text" placeholder="Town">
+                <br>
+                <label for="name-of-county">County:</label>
+                <input id="name-of-county" name="name-of-county" type="text" placeholder="County" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Working Legibility</legend>
+            <div>
+                <p>Do you have an Irish Passport?</p>
+                <input id="irish-passport-yes" name="irish-passport" type="radio" value="yes" required>
+                <label for="irish-passport-yes">Yes</label>
+                <input id="irish-passport-no" name="irish-passport" type="radio" value="no" required>
+                <label for="irish-passport-no">No</label>
+            </div>
+            <div>
+                <p>If no, do you have a working visa? <br><em>Ignore this question if you answered yes to the passport question.</em></p>
+                <input id="working-visa-yes" name="working-visa" type="radio" value="yes">
+                <label for="working-visa-yes">Yes</label>
+                <input id="working-visa-no" name="working-visa" type="radio" value="no">
+                <label for="working-visa-no">No</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Work Experience</legend>
+            <label for="work-experience">Have you had any experience working in a restuarant before, if yes, please specify? If no, please specify the type of work experience you've had?</label>
+            <br>
+            <textarea id="work-experience" name="work-experience" cols="90px" rows="10px" placeholder="Enter your experience here" required></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Interview times</legend>
+            <label for="interview-times">Please enter the time and day possible for you to come in for an interview.</label>
+            <br>
+            <input id="interview-times" name="interview-time-and-date1" type="datetime-local" required>
+        </fieldset>
+        <fieldset>
+            <legend>Your CV</legend>
+            <label for="cv-upload">Upload your CV here</label>
+            <br>
+            <input id="cv-upload" name="applicant's-cv" type="file" accept=".pdf, image/*, .doc" required>
+        </fieldset>
+        <br>
+        <input type="submit" value="Apply">
+        <input type="reset" value="Reset application">
+    </form>
+</body>
+</html>
