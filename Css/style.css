@@ -1,0 +1,15 @@
+body {
+    background-color:whitesmoke;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.main-course {
+    list-style: none;
+}
